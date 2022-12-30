@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'vrdznagir';
+    src: url(./fonts/Vrdznagir.otf);
+}
+@font-face {
+    font-family: 'ArianAMU';
+    src: url(./fonts/arnamu.ttf);
+}
+body {
+    min-height: 100vh;
+    background: url('./images/background.svg');
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.left_block {
+    position: relative;
+    width: 70%;
+}
+
+.pesa, .hars {
+    z-index: 1;
+    top: 20px;
+    position: absolute;
+}
+
+.pesa {
+    z-index: 2;
+    left: 40px;
+}
+
+.pesu_qaylel {
+    top: 20px;
+    position: absolute;
+    animation: pesu_qaylel 2.5s both;
+}
+
+.hars {
+    top: 40px;
+    right: 40px;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 164px;
+    background-color: #ffffff;
+}
+
+.pak_srtik {
+    position: absolute;
+    right: -70px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 163px;
+    border-radius: 50%;
+    background-image: url(./images/sirt.svg);
+    background-position: center;
+}
+
+.names p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #7782A4;
+}
+
+.to_right_flower {
+    margin-right: 100px;
+}
+
+.top_block {
+    height: 200px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px 8px 9px #B0B2B9;
+}
+
+.bottom_block {
+    height: 200px;
+    background: #CCD1DF;
+    border-bottom: 2px solid rgba(129, 133, 142, 0.88);
+    box-shadow: 4px -3px 9px #B0B2B9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.right_block {
+    margin-left: -41%;
+    background: #fff;
+    height: 540px;
+    padding: 25px 20px;
+}
+
+.heading {
+
+    text-align: center;
+}
+
+.heading h3 {
+    margin-bottom: 10px;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.heading span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 117.47%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #2C4896;
+}
+
+.heading p {
+    margin-top: 12px;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.psakadrutyan_araroxutyun {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.psakadrutyan_araroxutyun h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.psakadrutyan_araroxutyun p {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+.wedding_hall {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.wedding_hall h3 {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.wedding_hall span {
+    font-family: 'vrdznagir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #2C4896;
+}
+.wedding_hall p {
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+.thanks_block {
+    margin-top: 42px;
+    width: 100%;
+    text-align: center;
+    font-family: 'ArianAMU';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.hide_names_half {
+    animation: names_hide 2s both;
+}
+
+.to_right_flower, .to_left_flower, .pak_srtik, .names p {
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.show_right_half {
+    animation: show_right_block 2s both;
+}
+@keyframes show_right_block {
+    from {
+        margin-left: -40%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes names_hide {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 40%;
+    }
+}
+
+@keyframes pesu_qaylel {
+    from {
+        left: 40px;
+    }
+    to {
+        left: 53%;
+    }
+}
