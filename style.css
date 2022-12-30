@@ -19,7 +19,7 @@ body {
 
 .container {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     align-items: center;
 }
@@ -250,6 +250,6 @@ body {
         left: 40px;
     }
     to {
-        left: 53%;
+        left: 54%;
     }
 }
