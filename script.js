@@ -1,6 +1,7 @@
 const windowSize = window.innerWidth;
 let namak, pesa, names, right_block;
 
+
 if (windowSize > 1000) {
     document.querySelector('body').removeChild(document.querySelector('.small_container'))
     namak = document.querySelector('.left_block');
@@ -21,6 +22,9 @@ const namesHideHandler = () => {
 }
 const pesaHandler = () => {
     pesa.classList.add('pesu_qaylel');
-    namesHideHandler();
+    setTimeout(() => {
+        namesHideHandler();
+    },500)
+
 }
 namak.addEventListener('click', pesaHandler);
