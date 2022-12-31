@@ -22,9 +22,7 @@ const namesHideHandler = () => {
 }
 const pesaHandler = () => {
     pesa.classList.add('pesu_qaylel');
-    setTimeout(() => {
-        namesHideHandler();
-    },500)
+    namesHideHandler();
 
 }
 namak.addEventListener('click', pesaHandler);
