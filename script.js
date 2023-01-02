@@ -25,4 +25,6 @@ const pesaHandler = () => {
     namesHideHandler();
 
 }
-namak.addEventListener('click', pesaHandler);
+setTimeout(() => {
+    pesaHandler();
+},1500)
