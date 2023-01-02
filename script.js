@@ -29,4 +29,4 @@ const pesaHandler = () => {
 
 setTimeout(() => {
     pesaHandler();
-},1500)
+},2000)
